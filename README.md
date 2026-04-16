@@ -51,9 +51,9 @@ AGENT_PRIVATE_KEY="0xYourPrivateKeyHere"
 
 ### 3. Register your agent (once)
 
-Register your `<agent-address>`, which is public key of the `AGENT_PRIVATE_KEY` that you set the step 2 above.
+Register your `<agent-wallet-address>`, which is public key of the `AGENT_PRIVATE_KEY` that you set the step 2 above.
 ```bash
-bunx @worldcoin/agentkit-cli register <agent-address>
+bunx @worldcoin/agentkit-cli register <agent-wallet-address>
 ```
 
 The CLI prompts you to verify with World App, then submits the registration
