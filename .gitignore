@@ -1,0 +1,24 @@
+# Environment files
+.env*
+!.env.example
+
+# ZK circuit
+target
+
+# Node modules
+node_modules
+package-lock.json
+yarn.lock
+bun.lockb
+bun.lock
+pnpm-lock.yaml
+
+# Foundry
+lib/
+foundry.lock
+
+# Others
+.DS_Store
+.vscode
+
+archives
