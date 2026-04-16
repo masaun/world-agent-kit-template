@@ -40,26 +40,14 @@ bun install
 cp .env.example .env
 ```
 
-Generate an agent private key:
-
-```bash
-bun -e "console.log('0x' + require('crypto').randomBytes(32).toString('hex'))"
-```
-
-Derive the address (viem):
-
-```bash
-bun -e "
-const { privateKeyToAccount } = require('viem/accounts');
-const a = privateKeyToAccount('0x<your-key>');
-console.log(a.address);
-"
-```
-
 Edit `.env` and set `AGENT_PRIVATE_KEY`.
+```bash
+AGENT_PRIVATE_KEY="0xYourPrivateKeyHere"
+```
 
 ### 3. Register your agent (once)
 
+Register your `<agent-address>`, which is public key of the `AGENT_PRIVATE_KEY` that you set the step 2 above.
 ```bash
 bunx @worldcoin/agentkit-cli register <agent-address>
 ```
