@@ -1,6 +1,10 @@
 # World AgentKit Template
 
-A minimal but complete implementation of the [World AgentKit integration guide](https://docs.world.org/agents/agent-kit/integrate).
+## Overview
+
+This repo is the template for the `World AgentKit` integration by referencing the [World AgentKit integration guide](https://docs.world.org/agents/agent-kit/integrate).
+
+
 
 ## What this demonstrates
 
@@ -117,6 +121,35 @@ Expected output:
 
 ## References
 
-- [Integration guide](https://docs.world.org/agents/agent-kit/integrate)
+- [World AgentKit integration guide](https://docs.world.org/agents/agent-kit/integrate)
 - [SDK reference](https://docs.world.org/agents/agent-kit/sdk-reference)
 - [x402 protocol](https://x402.org)
+
+<br>
+
+<hr>
+
+## Extra - How to generate a public key/private key pair for testing purpose 
+
+1/ Generate an agent `private key`:
+```bash
+bun -e "console.log('0x' + require('crypto').randomBytes(32).toString('hex'))"
+```
+
+2/ Derive an agent `wallet address` (`public key`) with a generated `privat key` above using `viem`:
+   
+```bash
+# NOTE: You need to set "0x<your-private-key>" to the privateKeyToAccount() below - before executing the following code.
+bun -e "
+const { privateKeyToAccount } = require('viem/accounts');
+const a = privateKeyToAccount('0x<your-private-key>');
+console.log(a.address);
+"
+```
+
+3/ Register your agent (NOTE: This is the same with the step 3 of the "Quick start" above)
+
+Register your agent's `wallet-address` (agent's `public-key`)
+```bash
+bunx @worldcoin/agentkit-cli register <agent's wallet-address>
+```
