@@ -1,6 +1,10 @@
 # World AgentKit Template
 
-A minimal but complete implementation of the [World AgentKit integration guide](https://docs.world.org/agents/agent-kit/integrate).
+## Overview
+
+This repo is the template for the `World AgentKit` integration by referencing the [World AgentKit integration guide](https://docs.world.org/agents/agent-kit/integrate).
+
+
 
 ## What this demonstrates
 
@@ -117,6 +121,6 @@ Expected output:
 
 ## References
 
-- [Integration guide](https://docs.world.org/agents/agent-kit/integrate)
+- [World AgentKit integration guide](https://docs.world.org/agents/agent-kit/integrate)
 - [SDK reference](https://docs.world.org/agents/agent-kit/sdk-reference)
 - [x402 protocol](https://x402.org)
