@@ -30,7 +30,7 @@ const PAY_TO = (process.env.PAY_TO ?? "0xYourPaymentAddressHere") as `0x${string
 const FREE_TRIAL_USES = Number(process.env.FREE_TRIAL_USES ?? 3);
 
 // World Chain CAIP-2 identifier
-const WORLD_CHAIN = process.env.WORLD_CHAIN_MAINNET ?? "eip155:480";
+const WORLD_CHAIN = process.env.WORLD_CHAIN_MAINNET_INDENTIFIER ?? "eip155:480";
 // World USDC on World Chain
 const WORLD_USDC = process.env.USDC_ON_WORLD_CHAIN_MAINNET ?? "0x79A02482A880bCE3F13e09Da970dC34db4CD24d1";
 
