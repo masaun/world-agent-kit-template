@@ -49,7 +49,7 @@ Edit `.env` and set `AGENT_PRIVATE_KEY`.
 AGENT_PRIVATE_KEY="0xYourPrivateKeyHere"
 ```
 
-### 3. Register your agent (once)
+### 3. Register your `agent's wallet address` (`public key`) to the [`AgentBook`](https://worldscan.org/address/0xa23ab2712ea7bba896930544c7d6636a96b944da#code) contract on `World Chain mainnet`:
 
 Register your `<agent-wallet-address>`, which is public key of the `AGENT_PRIVATE_KEY` that you set the step 2 above.
 ```bash
@@ -101,13 +101,13 @@ Expected output:
 └── tsconfig.json
 ```
 
-## Key constants (World Chain)
+## Key constants (`World Chain - mainnet`)
 
 | Name | Value |
 |------|-------|
 | Chain ID (CAIP-2) | `eip155:480` |
 | World USDC | `0x79A02482A880bCE3F13e09Da970dC34db4CD24d1` |
-| AgentBook contract | `0xA23aB2712eA7BBa896930544C7d6636a96b944dA` |
+| AgentBook contract | [`0xA23aB2712eA7BBa896930544C7d6636a96b944dA`](https://worldscan.org/address/0xa23ab2712ea7bba896930544c7d6636a96b944da#code) |
 | Default facilitator | `https://x402-worldchain.vercel.app/facilitator` |
 
 ## Production checklist
