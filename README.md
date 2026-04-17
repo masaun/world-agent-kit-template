@@ -129,7 +129,15 @@ Expected output:
 
 <hr>
 
-## Extra - How to generate a public key/private key pair for testing purpose 
+## Extra - How to generate a public key/private key pair and regster it to the `AgentBook` contract on `World Chain mainnet` for testing purpose 
+
+- Generate a public key/private key pair and regster it to the `AgentBook` contract on `World Chain mainnet` for testing purpose: 
+```bash
+sh random-key-pair-generation-and-registration.sh
+```
+
+
+Or, manually executing the following commands 1 by 1:
 
 1/ Generate an agent `private key`:
 ```bash
