@@ -15,7 +15,7 @@ AGENT_PUBLIC_KEY=$(bun -e "
 
 echo "Generated public key (wallet address): $AGENT_PUBLIC_KEY"
 
-echo "Register your agent's wallet-address (agent's public-key)"
+echo "Register your agent's wallet-address (agent's public-key), which is $AGENT_PUBLIC_KEY, to the AgentBook contract on World Chain mainnet"
 bunx @worldcoin/agentkit-cli register $AGENT_PUBLIC_KEY
 
 echo ""
