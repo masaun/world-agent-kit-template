@@ -31,7 +31,7 @@ const RESOURCE_URI = `${SERVER_URL}/data`;
 const DOMAIN = new URL(SERVER_URL).hostname || "localhost";
 
 // World Chain CAIP-2 identifier
-const CHAIN_ID = process.env.WORLD_CHAIN_MAINNET ?? "eip155:480";
+const CHAIN_ID = process.env.WORLD_CHAIN_MAINNET_INDENTIFIER ?? "eip155:480";
 
 // Agent private key — load from secrets manager in production
 const rawKey = process.env.AGENT_PRIVATE_KEY;
